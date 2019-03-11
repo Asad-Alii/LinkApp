@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write something.."
+        android:inputType="text"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/okayEditMessage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okay"
+        android:layout_below="@id/edit_editText"/>
+
+    <Button
+        android:id="@+id/editMessage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Message"
+        android:layout_below="@id/edit_editText"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/deleteMessage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Message"
+        android:layout_below="@id/edit_editText"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

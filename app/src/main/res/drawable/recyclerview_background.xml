@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- SHADOW LAYER -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- CONTENT LAYER -->
+            <item android:left="3dp" android:top="3dp" >
+                <shape>
+                    <solid android:color="#ffffcc" />
+                    <corners android:radius="5dp" />
+                    <!--<stroke android:width="2px" android:color="#333133" />-->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <!-- SHADOW LAYER -->
+            <item android:left="3dp" android:top="3dp">
+                <shape>
+                    <solid android:color="#3e000000" />
+                    <corners android:radius="5dp" />
+                </shape>
+            </item>
+            <!-- CONTENT LAYER -->
+            <item android:bottom="3dp" android:right="3dp">
+                <shape>
+                    <solid android:color="#FFF" />
+                    <corners android:radius="5dp" />
+                    <!--<stroke android:width="2px" android:color="#333133" />-->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
